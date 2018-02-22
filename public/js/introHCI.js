@@ -10,4 +10,9 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	$(".likeBtn").click(likeClick);
+}
+
+function likeClick(e) {
+	gtag('event','click',{'event_category':'like'});
 }
